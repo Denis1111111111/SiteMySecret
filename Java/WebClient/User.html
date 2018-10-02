@@ -1,0 +1,35 @@
+<!Doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My secret</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="Controller.js"></script>
+</head>
+
+<body style="background-color:#DF72">
+    <!-- <pre id="name"> NAME  </pre> -->
+
+    <p id="result" width="80%"></p>
+    <input id="writeText" align="center" width="80%">
+    <button onclick=updateUser()>update</button>
+    <button onclick=deleteUser()>delete</button>
+    <button onclick=readUser()>read</button>
+
+    <script>
+
+        window.onload = function () {
+       //     document.getElementById('name').innerHTML = localStorage.getItem("name");
+            readUser();
+        };
+    </script>
+
+</body>
+</body>
+
+</html>
+
+
+

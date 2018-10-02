@@ -1,0 +1,42 @@
+<!Doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="Controller.js"></script>
+</head>
+
+<body style="background-color:#DF72">
+    <pre id="name"> Admin  </pre>
+
+    <p id="result" width="80%"></p>
+
+    <table id="table" border="border" cellpadding="10px">
+        <tr>
+            <td>ID</td>
+            <td>NAME</td>
+            <td>PASSWORD</td>
+            <td>SECRET</td>
+        </tr>
+    </table>
+
+    <input id="writeText" align="center" width="80%">
+    <button onclick=updateAdmin()>update</button>
+    <button onclick=deleteAdmin()>delete</button>
+    <button onclick=createAdmin()>create</button>
+    <!-- <button onclick=readAdmin()>read</button> -->
+
+    <script>
+
+        window.onload = function () {
+            readAdmin();
+        };
+    </script>
+
+</body>
+</body>
+
+</html>
